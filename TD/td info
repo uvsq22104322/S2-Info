@@ -1,0 +1,32 @@
+#Ouvrir un fichier : 
+#f=open("nom_fichier", "r"/"w")
+
+#Fermer un fichier : 
+#f.close()
+
+#Ecrire dans un fichier :
+#f.write("hello")
+
+#Lecture dans un fichier :
+#for ligne in f:
+#   print(ligne)
+
+#EXO 1:
+
+def moyenne(liste):
+    ##retourne la moyenne des 3 notes contenues dans la liste à partir de l'indice 1
+    return (int(liste[1]) + int(liste[2]) + int(liste[3])) / 3
+
+
+f_in=open("Notes.txt", "r")
+f_out=open("moyennes.txt", "w")
+
+for ligne in    f_in:
+    liste = ligne.split()
+    moy = moyenne(liste)
+    f_out.write(ligne[:-1] + " " + str(moy) + "\n")
+    #print(ligne, moy)
+
+f_in.close()
+f_out.close()
+

@@ -1,0 +1,23 @@
+#EXO 2:
+
+def nb_lignes(nom_fichier) :
+    f = open(nom_fichier, "r")
+    cpt = 0
+    for ligne in f:
+        cpt += 1
+    f.close()
+    return cpt
+
+print("Le nombre de lignes dans le fichier word.txt est :", nb_lignes("word.txt"))
+
+def ecrit_liste_mots(n):
+    f_in = open("word.txt","r")
+    f_out = open("word" + str(n) + ".txt", "w")
+    for ligne in f_in:
+        if len(ligne) == n+1:
+            f_out.write(ligne)        
+    f_in.close()
+    f_out.close()
+
+ecrit_liste_mots(5)
+print("Le nombre de mot à 5 lettres est :", nb_lignes("word5.txt"))
