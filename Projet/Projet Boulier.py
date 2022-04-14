@@ -3,7 +3,7 @@ import tkinter as tk
 racine=tk.Tk()
 
 canvas1 = tk.Canvas(racine, width=1400, height=500, bg="black", borderwidth=5 )
-buttonClear = tk.Button(racine, text="Réinitialiser", bg="red",relief="sunken") #, command=Clear #à faire)
+buttonClear = tk.Button(racine, text="Réinitialiser", bg="red",relief="sunken") # command=Clear à faire
 button1_1 = tk.Button(racine, text="button1_1", bg="red")
 button1_2 = tk.Button(racine, text="button1_2", bg="red")
 button1_4 = tk.Button(racine, text="button1_4", bg="red")
