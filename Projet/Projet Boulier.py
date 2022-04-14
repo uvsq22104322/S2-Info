@@ -29,7 +29,7 @@ button4_7 = tk.Button(racine, text="test", bg="red")
 button4_8 = tk.Button(racine, text="test", bg="red")
 button4_9 = tk.Button(racine, text="test", bg="red")
 button5_1 = tk.Button(racine, text="test", bg="red")
-
+button5_5 = tk.Button(racine, text="test", bg="red")
 
 
 
