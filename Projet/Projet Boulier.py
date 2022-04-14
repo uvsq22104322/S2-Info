@@ -1,6 +1,7 @@
 import tkinter as tk
 
 racine=tk.Tk()
+racine.title("Projet Boulier")
 
 canvas1 = tk.Canvas(racine, width=1400, height=500, bg="black", borderwidth=5 )
 buttonClear = tk.Button(racine, text="Réinitialiser", bg="red",relief="sunken") # command=Clear à faire
