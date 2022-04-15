@@ -6,12 +6,21 @@ racine.title("Projet Boulier")
 i=0
 y=1
 x=1
-def Start():
-    while i < 136:
-        canvas1.create_oval("les attributs jsais plus lequel avec genre x et y")
-        if y%8==0:
-                x += 1 
-        i += 1
+
+#1er essai:
+
+#def Start():
+#    for i in range(136):
+#        canvas1.create_oval(x,y, fill="red")
+#        if y%8==0:
+#                x += 1
+#                y += 1
+#        else:
+#                y += 1
+#        i += 1
+
+#2eme essai
+
 
 
 canvas1 = tk.Canvas(racine, width=1300, height=700, bg="black", borderwidth=4 )
