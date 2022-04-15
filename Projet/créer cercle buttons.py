@@ -36,3 +36,27 @@ button1.grid(column=0, row=0)
 racine.mainloop()
 
 
+
+
+#test if :
+DIM_BOULIER = (17,9)
+WIDTH = 1300
+HEIGHT = 700
+ecart_width = WIDTH/DIM_BOULIER[0]
+ecart_height = HEIGHT/DIM_BOULIER[1]
+
+
+def Start():
+    for x in range(DIM_BOULIER[0]):
+        for y in range(DIM_BOULIER[1]):
+            if y == 1 or y == 3:
+                canvas1.create_oval(x*ecart_width,y*ecart_height,x*ecart_width+ecart_width,y*ecart_height+ecart_height,fill="gray",tags="boules")
+            elif y == 2:
+                        if y == 2 and x%3 == 0 :
+                                canvas1.create_oval(x*ecart_width,y*ecart_height,x*ecart_width+ecart_width,y*ecart_height+ecart_height,fill="white")
+                        else :   
+                                canvas1.create_oval(x*ecart_width,y*ecart_height,x*ecart_width+ecart_width,y*ecart_height+ecart_height,fill="black")
+            else:
+                canvas1.create_oval(x*ecart_width,y*ecart_height,x*ecart_width+ecart_width,y*ecart_height+ecart_height,fill="red",tags="boules")
+
+
