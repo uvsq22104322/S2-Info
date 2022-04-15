@@ -21,6 +21,9 @@ x=1
 
 #2eme essai
 
+def Start():
+        pass
+
 
 
 canvas1 = tk.Canvas(racine, width=1300, height=700, bg="black", borderwidth=4 )
