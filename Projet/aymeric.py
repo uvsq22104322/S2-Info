@@ -19,10 +19,11 @@ racine.title("Projet Boulier")
 canvas1 = tk.Canvas(racine, width=WITDH, height=HEIGHT, bg="black", borderwidth=4 )
 
 #Création des boules
+
 def Start():
     for x in range(DIM_BOULIER[0]):
         for y in range(DIM_BOULIER[1]):
-            if 2 <= y <= 4:
+            if 1 <= y <= 3:
                 canvas1.create_oval(x*ecart_width,y*ecart_height,x*ecart_width+ecart_width,y*ecart_height+ecart_height,fill="gray",tags="boules")
             else:
                 canvas1.create_oval(x*ecart_width,y*ecart_height,x*ecart_width+ecart_width,y*ecart_height+ecart_height,fill="red",tags="boules")
