@@ -1,0 +1,14 @@
+import tkinter as tk
+
+root = tk.Tk()
+canvas = tk.Canvas(root)
+canvas.pack()
+item = canvas.create_rectangle(50, 25, 150, 75, fill="blue")
+
+def callback():
+    canvas.itemconfig(item,fill='red')
+
+button = tk.Button(root,text='Push me!',command=callback)
+button.pack()
+
+root.mainloop()
